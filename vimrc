@@ -47,8 +47,6 @@ else
   Plugin 'ecomba/vim-ruby-refactoring'
   Plugin 'nelstrom/vim-textobj-rubyblock'
   Plugin 'jgdavey/vim-blockle'
-  Plugin 'tpope/vim-rbenv'
-  Plugin 'tpope/vim-rake'
 
   "
   " General Editing
@@ -114,24 +112,9 @@ else
   Plugin 'pangloss/vim-javascript'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim'
-  Plugin 'nono/vim-handlebars'
   Plugin 'kchmck/vim-coffee-script'
-  Plugin 'tpope/vim-haml'
-  Plugin 'tpope/vim-cucumber'
-  Plugin 'quentindecock/vim-cucumber-align-pipes'
-  Plugin 'juvenn/mustache.vim'
-  Plugin 'fatih/vim-go'
-  Plugin 'rosstimson/scala-vim-support'
-  Plugin 'guns/vim-clojure-static'
-  Plugin 'chrisbra/csv.vim'
   Plugin 'elzr/vim-json'
-  Plugin 'briancollins/vim-jst'
-  Plugin 'digitaltoad/vim-jade'
   Plugin 'mxw/vim-jsx'
-  Plugin 'lambdatoast/elm.vim'
-  Plugin 'leafgarland/typescript-vim'
-  Plugin 'digitaltoad/vim-pug'
-  Plugin 'elixir-lang/vim-elixir'
 
   "
   " Development Tool Integration

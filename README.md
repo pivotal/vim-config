@@ -1,7 +1,7 @@
 # To Install
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
-    git clone https://github.com/pivotal/vim-config.git ~/.vim
+    git clone https://github.com/policygenius/vim-config.git ~/.vim
     ~/.vim/bin/install
 
 # Updating
@@ -11,23 +11,30 @@ Fetch the latest version of vim-config and install all the new bundles by runnin
 
 # Functionality
 
-Plugins and configuration provide most of the functionality of the pivotal vim
-config.  Below is a broad overview of the included plugins and what they do.
-Each plugin is linked to its documentation page, when readng the docs keep in
-mind that this config has comma mapped as the leader key:
+Below is a list of the plugins that are configured by default. There is a link to
+the complete documentation as well as a quick description and maybe a few things
+that you might think are pretty cool
+
+When reading the docs, keep in mind that this config has comma (`,`) mapped as the 
+leader key
 
 ## Ruby / Rails
-* [vim-rails](https://github.com/tpope/vim-rails) lets `gf` and `:Rextract` work on partials, highlights Rails functions.
-* [vim-endwise](https://github.com/tpope/vim-endwise) automatically puts in `end`s for your` if` and `do` blocks.
-* [vim-ruby-refactoring](https://github.com/ecomba/vim-ruby-refactoring) gives some IDE-like refactoring support to vim.  A favorite is `:RExtractLet` (aliased as `,rel`) which takes a local variable in a spec and makes it into a let statement. Others are `:RAddParameter`, `:RInlineTemp`, `:RConvertPostConditional`, `:RExtractConstant`, `:RExtractLocalVariable`, `:RRenameLocalVariable`, `:RRenameInstanceVariable`, `:RExtractMethod`.  They can also be accessed with the leader key followed by the capital letters in the command, so `:RAlphaBeta` becomes `,rab`.
-* [vim-blockle](https://github.com/jgdavey/vim-blockle) lets you change a `do..end` into a `{..}` by pressing `b` with the cursor on part of the block.
-* [rbenv.vim](https://github.com/tpope/vim-rbenv) adds a small amount of integration with rbenv.
-* [rake.vim](https://github.com/tpope/vim-rake) gives you a lot of the same niceties that you get from rails.vim except for non-Rails Ruby projects.
+* [vim-rails](https://github.com/tpope/vim-rails): Easy navigation of the standard Rails directory structure, enhanced syntax highlighting, interface to `rake`, interface to the `rails` command, partial extraction and much more!
+    * `gf` on a partial path or class name to open the file
+    * `:Emodel`, `:Eview`, `:Econtroller` to edit related files
+    * `:Rake` to run the current spec file and `:.Rake` to focus on the current example
+    * `:Rextract {file_name}` to extract the current selection to a new partial and replace the selection with `render {file_name}`
+* [vim-endwise](https://github.com/tpope/vim-endwise) This is a simple plugin that helps to end certain structures automatically. In Ruby, this means adding `end` after `if`, `do`, `def` and several other keywords.
+* [vim-ruby-refactoring](https://github.com/ecomba/vim-ruby-refactoring) gives some IDE-like refactoring support to vim. Examples [here](http://justinram.wordpress.com/2010/12/30/vim-ruby-refactoring-series/)
+    * `:RExtractLet` or `,rel` to extract a local variable in a spec to a `let` declaration
+    * `:RExtractMethod {name}` or `,rem {name}` to extract a the current selection to method named `{name}` and replace the current selection with `{name}`
+    * `:RAddParameter {name}` or `,rap {name}` to add a parameter to a method definition
+* [vim-blockle](https://github.com/jgdavey/vim-blockle) toggle between `do..end` and `{..}` with `,b` when your cursor is inside the block
 * Convert a line with `local_variable_foo` to `let(:local_variable_foo) { double(:local_variable_foo) }` with `,ld`.  Just place your cursor anywhere on the variable and press `,ld`.
 
 ## General Editing
-* [vim-surround](https://github.com/tpope/vim-surround) helps add/remove/change surround parentheses, quotes, and XML tags.  Inside of `"yolokitten"`, type `cs"'` to switch the surround double quotes to single quotes.  `t` can generally be used to refer to XML tags, so inside of `<tag>Hello</tag>` you can do `cit` to modify the word "Hello."  To add quotes around something, you can use the command `ys` followed by a motion and the character to surround it with.  For instance, inside of "hello", typing `ysiw(` will change it to "( hello )".
-    * [vim-repeat](https://github.com/tpope/vim-repeat) lets plugins override `.` (the period) to repeat commands.  Allows you to use `.` with the vim-surround magic above.
+* [vim-repeat](https://github.com/tpope/vim-repeat) is a utility for repeating actions that come from plugins such as vim-surround
+* [vim-surround](https://github.com/tpope/vim-surround) helps add/remove/change surround parentheses, quotes, and XML tags.
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) lets you comment and uncomment things.  The most useful command is `,/` which comments or uncomments either the current line or the currently selected block.  This config has `,/` mapped to the Toggle instead of `,c` as listed in the docs (the rest of the commands use the `c` as listed).
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) contains a bunch of shortcuts for longer commands that start with colons.  Some of the better ones are:
     * `]q` and `[q` to go back and forth through the quickfix list (the result of using `:Ag` or `:Ack`).

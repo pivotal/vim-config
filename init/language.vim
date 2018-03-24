@@ -23,6 +23,9 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 " JavaScript, ECMAScript
 au BufRead,BufNewFile *.es6 set ft=javascript
 
+" Use jsx without extension
+let g:jsx_ext_required = 0
+
 " Highlight Ruby files
 au BufRead,BufNewFile *.thor set filetype=ruby
 au BufRead,BufNewFile *.god set filetype=ruby

@@ -159,7 +159,14 @@ To upgrade bundles to their latest version, use the bang version:
 
     vim +PluginInstall! +qall # or run :PluginInstall! within Vim
 
+## neovim support (experimental)
+
+Follow the normal installation instructions, then run:
+
+    ln -s ~/.vim ~/.config/nvim
+
 ## tmux support (optional)
 
 If you will be using VIM with tmux for remote pairing or window management, see
 the [pivotal/tmux-config README](https://github.com/pivotal/tmux-config).
+

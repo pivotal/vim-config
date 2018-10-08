@@ -134,6 +134,12 @@ else
   Plugin 'elixir-lang/vim-elixir'
 
   "
+  " Markdown helpers
+  "
+  Plugin 'junegunn/goyo.vim'
+  Plugin 'reedes/vim-pencil'
+
+  "
   " Development Tool Integration
   "
   Plugin 'tpope/vim-fugitive'

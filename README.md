@@ -77,6 +77,12 @@ lets you view and cycle through your previous copy and paste registers on the fl
 * [rainbow-parentheses](https://github.com/kien/rainbow_parentheses.vim) highlights nested parentheses, brackets, and curly braces with differing colors so you can match them up more easily.
   * Use `,rp` to toggle rainbow parenthesis mode in the current file. By default it is off.
 
+## Markdown 
+* [Goyo](https://github.com/junegunn/goyo.vim) Distraction-free writing in Vim. Sets the width and height of the text area and centers it. Activate with `:Goyo` and turn it off with `:Goyo!`
+* [vim-pencil](https://github.com/reedes/vim-pencil) wraps the text, while allowing natural `jk` movements up and down in the paragraph
+  * `:SoftPencil`:  soft-line wrap mode
+  * `:HardPencil`:  hard-line wrap mode
+
 ## Window Management
 * [ZoomWin](http://www.vim.org/scripts/script.php?script_id=508) lets you close all other windows with `<C-w>o`.  You can restore all the closed windows with the same command.  Useful with `:tabo` to close everything but what you're working on.
 

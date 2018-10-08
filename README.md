@@ -1,7 +1,7 @@
 # To Install
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
-    git clone https://github.com/pivotal/vim-config.git ~/.vim
+    git clone https://github.com/policygenius/vim-config.git ~/.vim
     ~/.vim/bin/install
 
 # Updating
@@ -11,7 +11,7 @@ Fetch the latest version of vim-config and install all the new bundles by runnin
 
 # Functionality
 
-Plugins and configuration provide most of the functionality of the pivotal vim
+Plugins and configuration provide most of the functionality of the PolicyGenius vim
 config.  Below is a broad overview of the included plugins and what they do.
 Each plugin is linked to its documentation page. When reading the docs, keep in
 mind that this config has comma mapped as the leader key.
@@ -78,6 +78,12 @@ lets you view and cycle through your previous copy and paste registers on the fl
   * Use `,rp` to toggle rainbow parenthesis mode in the current file. By default it is off.
 * [neoformat](https://github.com/sbdchd/neoformat) lets you run the code formatter of your choice on your code, bound to `gg-G`.
 
+## Markdown 
+* [Goyo](https://github.com/junegunn/goyo.vim) Distraction-free writing in Vim. Sets the width and height of the text area and centers it. Activate with `:Goyo` and turn it off with `:Goyo!`
+* [vim-pencil](https://github.com/reedes/vim-pencil) wraps the text, while allowing natural `jk` movements up and down in the paragraph
+  * `:SoftPencil`:  soft-line wrap mode
+  * `:HardPencil`:  hard-line wrap mode
+
 ## Window Management
 * [ZoomWin](http://www.vim.org/scripts/script.php?script_id=508) lets you close all other windows with `<C-w>o`.  You can restore all the closed windows with the same command.  Useful with `:tabo` to close everything but what you're working on.
 
@@ -107,6 +113,7 @@ lets you view and cycle through your previous copy and paste registers on the fl
 * [vitality.vim](https://github.com/sjl/vitality.vim) makes Vim play nicely with iTerm2 and tmux. It adds things like cursor change on insert mode and focus-lost detection for triggering auto-save.
 * [test_server](https://github.com/brysgo/test_server) lets you use F9 thru F12 to run specs and report the output in vim.
 * [vim-simple-bdd](https://github.com/mdelillo/vim-simple-bdd) generates method declarations from [simple_bdd](https://github.com/robb1e/simple_bdd) steps
+* [neomake](https://github.com/neomake/neomake) gives you asynchronous linting and a make framework in vim.
 
 ## Colorschemes
 * [Vivid Chalk](https://github.com/tpope/vim-vividchalk)

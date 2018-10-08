@@ -136,6 +136,12 @@ else
   Plugin 'luan/vim-concourse'
 
   "
+  " Markdown helpers
+  "
+  Plugin 'junegunn/goyo.vim'
+  Plugin 'reedes/vim-pencil'
+
+  "
   " Development Tool Integration
   "
   Plugin 'tpope/vim-fugitive'
@@ -146,6 +152,7 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'brysgo/test_server'
   Plugin 'mdelillo/vim-simple-bdd'
+  Plugin 'neomake/neomake'
 
   call vundle#end()
 
